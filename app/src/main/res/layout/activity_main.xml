@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFDFD"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="351dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="20dp"
+        android:background="#D3D5D6"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/WHtext"
+            android:layout_width="134dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/height"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/cm"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColorHint="#0B0909"
+            android:textSize="28sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="348dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="30dp"
+        android:background="#D6D6D0"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/Htext"
+            android:layout_width="134dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/weight"
+            android:textAlignment="center"
+            android:textColor="#131313"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/kg"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColorHint="#0B0909"
+            android:textSize="28sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="25dp"
+        android:background="#FCFDFD"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/bmi_calculator"
+        android:textAlignment="viewStart"
+        android:textColor="@color/red"
+        android:textColorHighlight="@color/red"
+        android:textColorHint="@color/red"
+        android:textColorLink="@color/red"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btnradius"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/calculate"
+        android:textColor="#FFFF8D"
+        android:textSize="24sp"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:srcCompat="@drawable/icon2" />
+
+    <Button
+        android:id="@+id/ResetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btnradius"
+        android:fontFamily="@font/aclonica"
+        android:text="Reset"
+        android:textStyle="normal|bold|italic"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
